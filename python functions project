@@ -1,0 +1,17 @@
+c="string 'Mississipppi' is splitted into separate letters using slice() operator"
+print(c)
+def most_Frequent(a):
+    b = a.split(" ")
+    print(b)
+    d="sorted list is :"
+    print(d)
+    b.sort()
+    print(b)
+    res = {key : b.count(key) for key in b}
+    print(res)
+    result = sorted(b, key = b.count,reverse = True)
+    print(result)
+    fres = {key : result.count(key) for key in result}
+    print(fres)
+a="M i s s i s s i p p i"
+most_Frequent(a)
